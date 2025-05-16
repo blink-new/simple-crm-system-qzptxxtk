@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 210 100% 98%;
+    --foreground: 215 25% 20%;
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 20%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 20%;
+    --primary: 204 78% 26%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 195 100% 45%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 195 37% 93%;
+    --muted-foreground: 215 25% 40%;
+    --accent: 195 37% 93%;
+    --accent-foreground: 204 78% 26%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 204 78% 26%;
+    --chart-1: 204 78% 26%;
+    --chart-2: 195 100% 45%;
+    --chart-3: 195 37% 93%;
+    --chart-4: 0 0% 20%;
+    --chart-5: 0 0% 80%;
+    --radius: 0.5rem
+  ;
+    --sidebar-background: 204 78% 26%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 195 100% 45%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 195 37% 93%;
+    --sidebar-accent-foreground: 204 78% 26%;
+    --sidebar-border: 204 50% 20%;
+    --sidebar-ring: 195 100% 45%;}
+  .dark {
+    --background: 215 30% 10%;
+    --foreground: 210 40% 98%;
+    --card: 215 30% 15%;
+    --card-foreground: 210 40% 98%;
+    --popover: 215 30% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 204 70% 32%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 195 85% 40%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 30% 20%;
+    --muted-foreground: 210 40% 80%;
+    --accent: 215 30% 20%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 30% 25%;
+    --input: 215 30% 25%;
+    --ring: 195 85% 40%;
+    --chart-1: 204 70% 32%;
+    --chart-2: 195 85% 40%;
+    --chart-3: 210 40% 80%;
+    --chart-4: 0 0% 90%;
+    --chart-5: 0 0% 70%
+  ;
+    --sidebar-background: 204 78% 16%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 195 85% 40%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 215 30% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 204 50% 20%;
+    --sidebar-ring: 195 85% 40%;}
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-mint text-charcoal font-sans;
+  }
+}
+
+/* Add custom styles for the CRM */
+@layer components {
+  .pipeline-column {
+    @apply bg-white rounded-md shadow-md p-4 min-h-[400px];
+  }
+  
+  .contact-card {
+    @apply bg-white rounded-md shadow-sm p-4 border-l-4 mb-3 cursor-pointer transition-all hover:shadow-md;
+  }
+  
+  .status-badge {
+    @apply inline-flex items-center text-xs font-medium px-2.5 py-0.5 rounded-full;
+  }
+}
